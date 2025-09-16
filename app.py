@@ -6,7 +6,7 @@ import pandas as pd
 import ast
 
 # URL de tu API de FastAPI
-API_URL = "http://127.0.0.1:8000/human_query"
+API_URL = "https://c65c4163d656.ngrok-free.app/human_query"
 
 # Título de la aplicación
 st.title("🤖 Chatbot Reportes Dinámicos")
@@ -83,5 +83,6 @@ if prompt != None :
         st.plotly_chart(fig)
     
       
+
 
 
