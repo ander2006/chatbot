@@ -5,6 +5,20 @@ import plotly.express as px
 import pandas as pd
 import ast
 
+
+# Inyecta el CSS para ocultar el botón de GitHub
+hide_github_icon = """
+<style>
+.css-1jc7ptx, .e1ewe7hr3, .viewerBadge_container__1QSob,
+.styles_viewerBadge__1yB5_, .viewerBadge_link__1S137,
+.viewerBadge_text__1JaDK {
+    display: none;
+}
+</style>
+"""
+
+st.markdown(hide_github_icon, unsafe_allow_html=True)
+
 # URL de tu API de FastAPI
 API_URL = "https://c65c4163d656.ngrok-free.app/human_query"
 
@@ -83,6 +97,7 @@ if prompt != None :
         st.plotly_chart(fig)
     
       
+
 
 
 
