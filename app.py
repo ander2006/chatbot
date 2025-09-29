@@ -20,7 +20,7 @@ hide_github_icon = """
 st.markdown(hide_github_icon, unsafe_allow_html=True)
 
 # URL de tu API de FastAPI
-API_URL = "https://17e0191ce4a6.ngrok-free.app/human_query"
+API_URL = "https://fc087ac9a09a.ngrok-free.app/human_query"
 
 # Título de la aplicación
 st.title("🤖 Chatbot Reportes Dinámicos")
@@ -97,6 +97,7 @@ if prompt != None :
         st.plotly_chart(fig)
     
       
+
 
 
 
